@@ -1,0 +1,6 @@
+2019-04-03 16:21:37 TRACE main.c:23: hello world
+2019-04-03 16:21:37 DEBUG main.c:24: hello world
+2019-04-03 16:21:37 INFO  main.c:25: hello world
+2019-04-03 16:21:37 WARN  main.c:26: hello world
+2019-04-03 16:21:37 ERROR main.c:27: hello world
+2019-04-03 16:21:37 FATAL main.c:28: hello world

@@ -1,5 +1,6 @@
 # log.c
-A simple logging library implemented in C99
+A simple logging library implemented in C99 originall from:
+https://github.com/rxi/log.c 
 
 ![screenshot](https://cloud.githubusercontent.com/assets/3920290/23831970/a2415e96-0723-11e7-9886-f8f5d2de60fe.png)
 
@@ -30,40 +31,17 @@ Resulting in a line with the given format printed to stderr:
 20:18:26 TRACE src/main.c:11: Hello world
 ```
 
+## How to configure settings?
+#### void log_setting_config(int level, int enable, FILE* fp);
+This is the only log setting config function that should be called if we want
+to log to a file. 'level' determins which level and above we want to output,
+'enable' decides whether we want the terminal logs to be quiet or not, 'fp'
+is the file descriptor that points to the file where we want the log goes to.
 
-#### log_set_quiet(int enable)
-Quiet-mode can be enabled by passing `1` to the `log_set_quiet()` function.
-While this mode is enabled the library will not output anything to stderr, but
-will continue to write to the file if one is set.
-
-
-#### log_set_level(int level)
-The current logging level can be set by using the `log_set_level()` function.
-All logs below the given level will be ignored. By default the level is
-`LOG_TRACE`, such that nothing is ignored.
-
-
-#### log_set_fp(FILE *fp)
-A file pointer where the log should be written can be provided to the library by
-using the `log_set_fp()` function. The data written to the file output is
-of the following format:
-
-```
-2047-03-11 20:18:26 TRACE src/main.c:11: Hello world
-```
-
-
-#### log_set_lock(log_LockFn fn)
-If the log will be written to from multiple threads a lock function can be set.
-The function is passed a `udata` value (set by `log_set_udata()`) and the
-integer `1` if the lock should be acquired or `0` if the lock should be
-released.
-
-
-#### LOG_USE_COLOR
-If the library is compiled with `-DLOG_USE_COLOR` ANSI color escape codes will
-be used when printing.
-
+## Examples 
+There is main.c and a Makefile, just simply run make in command line and you
+would be able to see the output messages both from terminal and within the
+logfile.txt.
 
 ## License
 This library is free software; you can redistribute it and/or modify it under
