@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LOG_CONFIG	log.c	/^}LOG_CONFIG;$/;"	t	typeref:struct:__anon1	file:
+LOG_DEBUG	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+LOG_ERROR	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+LOG_FATAL	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+LOG_H	log.h	9;"	d
+LOG_INFO	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+LOG_STRUCT	log.c	/^}LOG_STRUCT;$/;"	t	typeref:struct:__anon2	file:
+LOG_TRACE	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+LOG_VERSION	log.h	14;"	d
+LOG_WARN	log.h	/^enum { LOG_TRACE, LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_ERROR, LOG_FATAL };$/;"	e	enum:__anon5
+TASK_1	log.h	/^enum { TASK_1, TASK_2, TASK_3, TASK_4, TASK_5 };$/;"	e	enum:__anon3
+TASK_2	log.h	/^enum { TASK_1, TASK_2, TASK_3, TASK_4, TASK_5 };$/;"	e	enum:__anon3
+TASK_3	log.h	/^enum { TASK_1, TASK_2, TASK_3, TASK_4, TASK_5 };$/;"	e	enum:__anon3
+TASK_4	log.h	/^enum { TASK_1, TASK_2, TASK_3, TASK_4, TASK_5 };$/;"	e	enum:__anon3
+TASK_5	log.h	/^enum { TASK_1, TASK_2, TASK_3, TASK_4, TASK_5 };$/;"	e	enum:__anon3
+TERMINAL_NOT_QUIET	log.h	/^enum { TERMINAL_NOT_QUIET, TERMINAL_QUIET };$/;"	e	enum:__anon4
+TERMINAL_QUIET	log.h	/^enum { TERMINAL_NOT_QUIET, TERMINAL_QUIET };$/;"	e	enum:__anon4
+color_str	log.c	/^    char* color_str;$/;"	m	struct:__anon1	file:
+fp	log.c	/^    FILE *fp;   \/* log file *\/$/;"	m	struct:__anon2	file:
+level	log.c	/^    int level;  \/* debug level *\/$/;"	m	struct:__anon2	file:
+level	log.c	/^    int level;$/;"	m	struct:__anon1	file:
+level_str	log.c	/^    char* level_str;$/;"	m	struct:__anon1	file:
+log_config	log.c	/^static const LOG_CONFIG log_config[] = {$/;"	v	file:
+log_debug	log.h	22;"	d
+log_error	log.h	25;"	d
+log_fatal	log.h	26;"	d
+log_info	log.h	23;"	d
+log_log	log.c	/^void log_log(int task, int level, const char *file, int line, const char *fmt, ...) $/;"	f
+log_mutex	log.c	/^static pthread_mutex_t log_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+log_trace	log.h	21;"	d
+log_warn	log.h	24;"	d
+logger	log.c	/^static LOG_STRUCT logger = { 0, 0, 0, NULL};$/;"	v	file:
+logger_config	log.c	/^void logger_config(int task, int level, int quiet, FILE* fp)$/;"	f
+main	main.c	/^int main(void)$/;"	f
+mask	log.c	/^    int mask;   \/* only enable a specific task log output *\/$/;"	m	struct:__anon2	file:
+quiet	log.c	/^    int quiet;  \/* terminal quiet or not *\/$/;"	m	struct:__anon2	file:
