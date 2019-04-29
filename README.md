@@ -22,13 +22,13 @@ log_fatal(const char *fmt, ...);
 Each function takes a printf format string followed by additional arguments:
 
 ```c
-log_trace("Hello %s", "world")
+log_trace(TASK_1, "hello %s", "world");
 ```
 
 Resulting in a line with the given format printed to stderr:
 
 ```
-20:18:26 TRACE src/main.c:11: Hello world
+04/29/19 15:52:36  TASK_3 TRACE main.c:43: hello world
 ```
 
 ## How to configure settings?
